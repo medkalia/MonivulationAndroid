@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CompleteRegisterActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/avgPeriodCard"
+        android:layout_width="273dp"
+        android:layout_height="283dp"
+        android:layout_centerInParent="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="172dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:text="how long is your average period ?"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                android:text="Bleeding usually last 4 - 7 days" />
+
+            <SeekBar
+                android:id="@+id/avgPeriodSeek"
+                android:layout_width="192dp"
+                android:layout_height="33dp"
+                android:min="1"
+                android:max="12"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/avgValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="98dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/confirmAvgPeriod"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="37dp"
+                android:text="confirm" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cycleLengthCard"
+        android:layout_width="273dp"
+        android:layout_height="283dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="172dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:text="how long is your average cycle ?"
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                android:text="the interval between two periods is usually 23 - 35 days" />
+
+            <SeekBar
+                android:id="@+id/cycleLengthSeek"
+                android:layout_width="192dp"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                android:max="35"
+                android:min="23" />
+
+            <TextView
+                android:id="@+id/cycleValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="98dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/confirmCycleLength"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="37dp"
+                android:text="confirm" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/startDateCard"
+        android:layout_width="273dp"
+        android:layout_height="283dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="172dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:text="when did your last period start ?"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/startDatePicker"
+                android:layout_width="192dp"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                android:text="click to pick a date"
+                android:textAlignment="center" />
+
+
+            <Button
+                android:id="@+id/confirmStartDate"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="37dp"
+                android:text="finish" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
